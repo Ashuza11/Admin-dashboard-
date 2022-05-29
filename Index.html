@@ -47,7 +47,7 @@
                 <h5>Bordereaux</h5>
             
                 <li><a href="#">
-                    <i class="uil uil-message"></i>
+                    <i class="uil uil-file-share-alt"></i>
                     <span class="link-name">Envoyés</span>
                 </a></li>
                 <li><a href="#">
@@ -96,53 +96,92 @@
     </nav>
     <section class="dashboard">
         <div class="top">
-            <div class="let-box">
-                <img src="Img/hmenu.svg" alt="humboger menu" class="sidbar-toggle" onclick="logoChange1()">
+            <div class="left-box">
+                <img src="Img/hmenu.svg" alt="humboger menu" class="sidbar-toggle">
                 <div class="search-box">
                     <i class="uil uil-search"></i>
                     <input type="text" placeholder="search here.....">
                 </div>
             </div>
             <div class="right-box">
-                <img src="Img/admin.png" alt="profile picture">
+                <span><i class="uil uil-envelope"></i></span>
+                <span><i class="uil uil-bell"></i></span>
+                <img src="Img/superadmin.svg" alt="profile picture">
+                <div class="superadmin">
+                    <p class="name">Dr. Olivier</p>
+                    <p class="function">Super Admin</p>
+                </div>
+                
             </div>
         </div>
         <div class="dash-content">
             <div class="overview">
                 <div class="title">
-                    <i class="icon"></i>
+                    <i class="uil uil-tachometer-fast-alt"></i>
                     <span class="text">Dashboard</span>
                 </div>
                 <div class="boxes">
                     <div class="box box1">
                         <i class="icon"></i>
-                        <span class="text">Total Student</span>
-                        <span class="number">32</span>
+                        <span class="text">Etudiants  enregistrés</span>
+                        <span class="number">200</span>
                     </div>
                     <div class="box box2">
                         <i class="icon"></i>
-                        <span class="text">Total Bordereaux</span>
-                        <span class="number">32</span>
+                        <span class="text">Montant payé en liquide</span>
+                        <span class="number">700$</span>
                     </div>
                     <div class="box box3">
                         <i class="icon"></i>
-                        <span class="text">Total Payment</span>
-                        <span class="number">32</span>
+                        <span class="text">Bordereaux eregistrés</span>
+                        <span class="number">100</span>
                     </div>
                     <div class="box box4">
                         <i class="icon"></i>
-                        <span class="text">Plan</span>
-                        <span class="number">32</span>
+                        <span class="text">Etudiants inscrits a la session</span>
+                        <span class="number">50</span>
                     </div>
                 </div>
             </div>
             <div class="recent-activity">
-                <div class="title">
-                    <i class="icon"></i>
-                    <span class="text">Recent Activity</span>
+                <div class="title title1">
+                    <div class="left">
+                        <i class="uil uil-file-upload-alt"></i>
+                        <span class="text">Etudiants récemment enregistrés</span>
+                    </div>
+                    <div class="reight">
+                        <img src="Img/filter-3-line 1.png" alt="Filter Image" class="filter">
+                        <button class="add-student">Ajouter étudiant</button>
+                    </div>
                 </div>
                 <div class="activity-data">
-                    
+                    <div class="data number">
+                        <span class="data-title">N°</span>
+                        <span class="data-list">01</span>
+                    </div>
+                    <div class="data name">
+                        <span class="data-title">Nom</span>
+                        <span class="data-list">MUHIGIRI</span>
+                    </div>
+                    <div class="data post-name">
+                        <span class="data-title">Post-Nom</span>
+                        <span class="data-list">Ashuza</span>
+                    </div>
+                    <div class="data promotion">
+                        <span class="data-title">Promotion</span>
+                        <span class="data-list">G3</span>
+                    </div>
+                    <div class="data matricule">
+                        <span class="data-title">Matricule</span>
+                        <span class="data-list">15635</span>
+                    </div>
+                    <div class="data Action">
+                        <span class="data-title">Action</span>
+                        <div class="action">
+                            <span class="data-list">Editer</span>
+                            <span class="data-list">Désactiver</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -24,7 +24,7 @@
     --midleText:#fff;
     --border1Calor: #4d4c4c;
     --searchbarcolor: #e6e5e5;
-    --content-text-color: #000;
+    --content-text-color: #363740;
 
 
     --tran-05: all 0.5s ease;
@@ -50,7 +50,7 @@ body.dark{
     --midleText:#000;
     --text:rgba(0, 0, 0, 0.581);
     --border1Calor: #ccc;
-    --content-text-color: #fff;
+    --content-text-color: #edeeef;
 }
 nav{
     position: fixed;
@@ -246,25 +246,56 @@ nav.close ~ .dashboard .top{
     width: calc(100% - 73px);
 }
 
-.dashboard .top .let-box {
+.dashboard .top .left-box {
     width: 300px;
     height: auto;
     display: flex;
     gap: 12px;
 }
+
+.dashboard .top .right-box {
+    width: 300px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+.top .right-box  span i{
+    font-size: 30px;
+    color: var(--content-text-color);
+}
+.top .right-box .superadmin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.top .right-box .superadmin .name{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--content-text-color);
+}
+
+.top .right-box .superadmin .function{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--cards);
+}
+
 .dashboard .top .sidbar-toggle{
     width: 28px;
     height: auto;
     cursor: pointer;
 }
-.dashboard .top .let-box .search-box{
+.dashboard .top .left-box .search-box{
     position: relative;
-    height: 35px;
+    height: 40px;
     max-width: 350px;
     width: 100%;
     margin: 0 30x;
 }
-.top  .let-box .search-box input{
+.top  .left-box .search-box input{
     position: absolute;
     border: 1px solid var(--searchbarcolor);
     /* background-color: var(--side-menu); */
@@ -275,8 +306,9 @@ nav.close ~ .dashboard .top{
     font-size: 15px;
     font-weight: 400;
     outline: none;
+    border-radius: 24px;
 }
-.top  .let-box .search-box i{
+.top  .left-box .search-box i{
     position: absolute;
     left: 15px;
     font-size: 22px;
@@ -284,9 +316,9 @@ nav.close ~ .dashboard .top{
     top: 50%;
     transform: translateY(-50%);
 }
+
 .top img{
-    width: 40px;
-    border-radius: 50%;
+    width: 50px;
 }
 
 .dashboard .dash-content{
@@ -295,7 +327,7 @@ nav.close ~ .dashboard .top{
 .dash-content .title {
     display: flex;
     align-items: center;
-    margin: 70px 0 30px 0;
+    margin: 50px 0 30px 0;
 }
 .dash-content .title i {
     position: relative;
@@ -303,7 +335,7 @@ nav.close ~ .dashboard .top{
     width: 35px;
     background-color: var(--nouveau);
     border-radius: 6px;
-    color: var(--midleText);
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -311,10 +343,41 @@ nav.close ~ .dashboard .top{
 }
 .dash-content .title .text{
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--content-text-color);
     margin-left: 10px;
 }
+.dash-content .left {
+    display: flex;
+}
+.dash-content .reight {
+    display: flex;
+    gap: 15px;
+}
+.dash-content .reight .filter {
+  width: 35px;
+  height: auto;
+  cursor: pointer;
+}
+.dash-content .reight .add-student{
+    width: 200px;
+    height: 35px;
+    background-color: var(--nouveau);
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+.dash-content .title1 {
+    margin: 40px 0 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Boxes  */
 .dash-content .boxes {
     display: flex;
     align-items: center;
@@ -344,3 +407,4 @@ nav.close ~ .dashboard .top{
     font-weight: 500;
     color: var(--content-text-color);
 }
+
