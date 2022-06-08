@@ -25,7 +25,8 @@
     --border1Calor: #E2E8F0;
     --searchbarcolor: #e6e5e5;
     --content-text-color: #363740;
-    --tableChange: #fcfff9;
+    --tableChange: #f3f3f3f3;
+    --Table-color:#edeeef;
 
 
     --tran-05: all 0.5s ease;
@@ -52,7 +53,9 @@ body.dark{
     --text:rgba(0, 0, 0, 0.581);
     --border1Calor: #ccc;
     --content-text-color: #edeeef;
-    --tableChange: #fdf9ef;
+    --tableChange: #f3f3f3;
+    --Table-color:#edeeef;
+
     
 }
 nav{
@@ -418,6 +421,9 @@ nav.close ~ .dashboard .top{
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.dash-content .recent-activity .content-table{
+  background-color: var(--Table-color);
 }
 .dash-content .content-table thead tr{
     background-color: #E2E8F0;
