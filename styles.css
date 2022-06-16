@@ -406,7 +406,7 @@ nav.close ~ .dashboard .top{
     color: var(--content-text-color);
 }
 .boxes .box .text {
-    white-space: pre-wrap;
+    white-space: nowrap;
     font-size: 1.2rem;
     font-weight: 500;
     color: var(--content-text-color);
@@ -547,15 +547,13 @@ nav.close ~ .dashboard .top{
         overflow: scroll;
     }
 }
-@media (width: 1355px) {
+/* @media (max-width: 1355px) {
     .boxes .box4 .text{
-        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis; 
-        word-wrap: break-word;
 
     }
-}
+} */
 
 
 
