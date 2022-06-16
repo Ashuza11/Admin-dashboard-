@@ -535,12 +535,7 @@ nav.close ~ .dashboard .top{
         overflow-y: scroll;
     }
 }
-@media (max-width: 1686px) {
-    .boxes .box .text {
-        text-overflow: ellipsis;
-        overflow: hidden;
-    }
-}
+
 
 
 
