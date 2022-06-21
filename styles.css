@@ -462,7 +462,7 @@ nav.close ~ .dashboard .top{
     margin: auto;
     width: 100%;
     height: auto;  
-    margin-top: 50px;
+    margin-top: 40px;
     text-align: center;
 }
 .dashboard .dash-content .pagination a{
@@ -563,6 +563,9 @@ nav.close ~ .dashboard .top{
 @media (max-width: 650px) {
     .dash-content .boxes .box{
         width: 100%;
+    }
+    .dash-content .title{
+        padding-top: 20px;
     }
 }
 
