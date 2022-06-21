@@ -458,6 +458,36 @@ nav.close ~ .dashboard .top{
 .dash-content .content-table tbody tr .deactivate{
     color: #E22E1C;
 }
+.dashboard .dash-content .pagination{
+    margin: auto;
+    width: 100%;
+    height: auto;  
+    margin-top: 50px;
+    text-align: center;
+}
+.dashboard .dash-content .pagination a{
+    color: var(--cards);
+    padding: 2px 12px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: medium;
+}
+.dashboard .dash-content .pagination a.active{
+    color: white;
+    background-color: var(--nouveau);
+    border-radius: 50%;
+}
+.dashboard .dash-content .pagination a:hover:not(.active){
+    background-color: var(--nouveau);
+    color: #fff;
+    border-radius: 50%;
+}
+.dashboard .dash-content .pagination .bold {
+    font-weight: bold;
+}
+
+
+
 
 @media (max-width: 1494px){
     nav {
@@ -539,6 +569,9 @@ nav.close ~ .dashboard .top{
 @media (max-width: 800px) {
     .dash-content .recent-activity {
         overflow-y: scroll;
+    }
+    .dash-content .recent-activity .title .left .text{
+        white-space: nowrap;
     }
 }
 
