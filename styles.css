@@ -467,10 +467,12 @@ nav.close ~ .dashboard .top{
 }
 .dashboard .dash-content .pagination a{
     color: var(--cards);
-    padding: 2px 12px;
+    padding: 1px 10px;
+    margin: 4px;
     text-decoration: none;
     cursor: pointer;
     font-size: medium;
+   
 }
 .dashboard .dash-content .pagination a.active{
     color: white;
